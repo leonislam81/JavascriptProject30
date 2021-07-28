@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  background-color: #ffc600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* style of main panels */
+div.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+/*Design all panels*/
+div.panel {
+  background-color: #6B0F9C;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+/*Design inside of panel*/
+div.panel> * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+}
+/*Adding Background Image Each of The palen*/
+div.panel1{background-image: url(./Image/img1.jpg)}
+div.panel2{background-image: url(./Image/img2.jpg)}
+div.panel3{background-image: url(./Image/img3.jpg)}
+div.panel4{background-image: url(./Image/img4.jpg)}
+div.panel5{background-image: url(./Image/img5.jpg)}
+
+/*Started*/
+div.panel > *:first-child {
+  transform: translateY(-100%);
+}
+/*When click the panel*/
+div.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+/*Started*/
+div.panel > *:last-child {
+  transform: translateY(100%);
+}
+/*When click the panel*/
+div.panel.open-active > *:last-child {
+  transform: translateY(0%);
+}
+/*Style of panel's children*/
+div.panel p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+div.panel p:nth-child(2) {
+  font-size: 4rem;
+}
+div.open {
+  flex: 5;
+  font-size: 40px;
+}
