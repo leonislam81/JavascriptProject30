@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Press the key to play Music</h2>
+      <div class="musicField">
+        <div class="sound" data-key="65">
+          <p>A</p>
+          <span>Press A</span>
+        </div>
+        <div class="sound" data-key="66">
+          <p>B</p>
+          <span>Press B</span>
+        </div>
+        <div class="sound" data-key="67">
+          <p>C</p>
+          <span>Press C</span>
+        </div>
+        <div class="sound" data-key="68">
+          <p>D</p>
+          <span>Press D</span>
+        </div>
+        <div class="sound" data-key="69">
+          <p>E</p>
+          <span>Press E</span>
+        </div>
+        <div class="sound" data-key="70">
+          <p>F</p>
+          <span>Press F</span>
+        </div>
+      </div>
+      <audio
+        data-key="65"
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+      ></audio>
+      <audio
+        data-key="66"
+        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+      ></audio>
+      <audio
+        data-key="67"
+        src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+      ></audio>
+      <audio
+        data-key="68"
+        src="https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3"
+      ></audio>
+      <audio
+        data-key="69"
+        src="https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"
+      ></audio>
+      <audio
+        data-key="70"
+        src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+      ></audio>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

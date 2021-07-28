@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px greenyellow;
+}
+div.musicField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+}
+div.sound {
+  border: 2px solid rgb(228, 210, 210);
+  padding: 20px 40px;
+  text-align: center;
+  transition: all 0.7s;
+}
+div.sound p {
+  font-size: 26px;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: 2px 2px beige;
+  margin: 0;
+}
+div.sound span {
+  background-color: rgb(165, 157, 42);
+  color: aliceblue;
+  padding: 8px 16px;
+  margin-top: 16px;
+  display: block;
+}
+div.playing {
+  transform: scale(1.1);
+  border: 3px solid rgb(255, 142, 14);
+  box-shadow: 1px 0px 13px 7px rgba(255, 131, 0, 0.29);
+}
