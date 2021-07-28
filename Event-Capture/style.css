@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+  }
+  
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: rgb(255, 7, 255);
+  }
+
+  .two {
+    background: rgb(255, 29, 4);
+  }
+
+  .three {
+    background: rgb(197, 185, 18);
+  }
