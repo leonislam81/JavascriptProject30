@@ -1,4 +1,4 @@
-// Some data we can work with
+
 
 const inventors = [
       { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -23,30 +23,24 @@ const inventors = [
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
 
-    // Array.prototype.filter()
-    // 1. Filter the list of inventors for those who were born in the 1500's
 
     const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
 
     console.log(fifteen);
 
-  // Array.prototype.map()
-  // 2. Give us an array of the inventor first and last names
 
   const fullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 
   console.log(fullName);
 
-  // Array.prototype.sort()
-  // 3. Sort the inventors by birthdate, oldest to youngest
+
 
   const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
 
   console.log(ordered);
 
 
-    // Array.prototype.reduce()
-    // 4. How many years did all the inventors live?
+
 
     const totalYear = inventors.reduce((total, inventor) => {
       return total + (inventor.passed - inventor.year);
@@ -54,7 +48,7 @@ const inventors = [
     
     console.log(totalYear);
 
-    // 5. Sort the inventors by years lived
+
     const oldest = inventors.sort(function(a, b) {
       const lastInventor = a.passed - a.year;
       const nextInventor = b.passed - b.year;
